@@ -1,6 +1,12 @@
-# AnhangueraFunctions
-
+# AnhangueraFunctions - AhangueraEducacional
+Esse projeto foi desenvolvido para solução de uma atividade da matéria de desenvolvimento com Framework Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+
+# Definição dos objetivos de aula prática
+• Compreender e praticar a implantação de estruturas e funções em TypeScript.
+• Utilizar softwares específicos para o desenvolvimento em TypeScript.
+• Demonstrar a importância de exemplos e aplicações em estruturas condicionais,
+estruturas de repetição e funções com a linguagem TypeScript
 
 ## Development server
 
