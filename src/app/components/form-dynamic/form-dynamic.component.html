@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div *ngFor="let field of objectKeys(formData)">
+        <label>{{ field | titlecase }}</label>
+        <input
+            *ngIf="field !== 'habilidades'; else skillsInput"
+            type="text"
+            [formControlName]="field"
+            />
+        <ng-template #skillsInput>
+            <div *ngFor="let skill of formData.habilidades; let i = index">
+                <input
+                    type="text"
+                    [formControlName]="'habilidades' + i"
+                />
+            </div>
+            <button type="button" (click)="addSkill()">Adicionar Habilidades</button>
+        </ng-template>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
